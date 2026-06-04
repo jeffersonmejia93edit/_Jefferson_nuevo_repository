@@ -1,1 +1,230 @@
 hola estoy trabajando desde quiero ver el cambio 
+
+---------------------------------------------
+
+
+segundo cambio 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Análisis, reseñas y nostalgia gamer retro">
+    <title>PixelRetro - Análisis y Reseñas</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background: linear-gradient(135deg,#0a0a0a,#1a0033,#000814);
+            color:#fff;
+            font-family:'Orbitron',sans-serif;
+            min-height:100vh;
+        }
+
+        header{
+            text-align:center;
+            padding:40px 20px;
+            background:rgba(0,0,0,.7);
+            border-bottom:3px solid #00ffff;
+            box-shadow:0 0 20px #00ffff;
+        }
+
+        header h1{
+            font-family:'Press Start 2P',cursive;
+            font-size:2rem;
+            color:#00ffff;
+            text-shadow:
+                0 0 5px #00ffff,
+                0 0 15px #00ffff,
+                0 0 30px #00ffff;
+            margin-bottom:15px;
+        }
+
+        header p{
+            color:#ff66ff;
+            font-size:0.9rem;
+        }
+
+        nav{
+            background:#111;
+            padding:15px;
+            border-bottom:2px solid #ff00ff;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:#fff;
+            padding:10px 18px;
+            border:2px solid #00ffff;
+            border-radius:6px;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            background:#00ffff;
+            color:#000;
+            box-shadow:0 0 15px #00ffff;
+        }
+
+        main{
+            max-width:1200px;
+            margin:40px auto;
+            padding:20px;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:rgba(255,255,255,.05);
+            border:1px solid rgba(0,255,255,.4);
+            border-radius:15px;
+            padding:25px;
+            backdrop-filter:blur(10px);
+            transition:0.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+            box-shadow:0 0 25px rgba(0,255,255,.7);
+        }
+
+        .card h2{
+            color:#00ffff;
+            margin-bottom:15px;
+            font-size:1.2rem;
+        }
+
+        .card p{
+            line-height:1.7;
+            color:#ddd;
+        }
+
+        .badge{
+            display:inline-block;
+            background:#ff00ff;
+            color:#fff;
+            padding:6px 12px;
+            border-radius:20px;
+            font-size:.8rem;
+            margin-bottom:15px;
+        }
+
+        .hero{
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        .hero h2{
+            font-size:2rem;
+            color:#ff66ff;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            max-width:700px;
+            margin:auto;
+            color:#ccc;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            margin-top:40px;
+            border-top:2px solid #00ffff;
+            background:rgba(0,0,0,.8);
+            color:#aaa;
+        }
+
+        @media(max-width:768px){
+            header h1{
+                font-size:1.2rem;
+            }
+
+            .hero h2{
+                font-size:1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>PIXELRETRO</h1>
+        <p>Análisis • Reseñas • Nostalgia Gamer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Juegos de 8 Bits</a></li>
+            <li><a href="#">Consolas Portátiles</a></li>
+            <li><a href="#">Bandas Sonoras</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h2>Reviviendo la Edad Dorada del Gaming</h2>
+        <p>
+            Descubre análisis, curiosidades y los mejores recuerdos de las
+            consolas y videojuegos que marcaron generaciones.
+        </p>
+    </section>
+
+    <main>
+
+        <article class="card">
+            <span class="badge">ANÁLISIS</span>
+            <h2>El regreso de los juegos de plataformas difíciles</h2>
+            <p>
+                Este nuevo título independiente nos recuerda a los desafíos
+                de los años 90. Sus controles precisos y una curva de
+                dificultad exigente ponen a prueba la habilidad del jugador.
+            </p>
+        </article>
+
+        <article class="card">
+            <span class="badge">TOP 5</span>
+            <h2>Mejores bandas sonoras en formato MIDI</h2>
+            <p>
+                Un recorrido por las melodías más memorables de la era retro,
+                creadas con chips de sonido que definieron una generación.
+            </p>
+        </article>
+
+        <article class="card">
+            <span class="badge">ESPECIAL</span>
+            <h2>Las consolas portátiles que hicieron historia</h2>
+            <p>
+                Desde la Game Boy hasta las joyas menos conocidas,
+                repasamos los dispositivos que permitieron jugar
+                en cualquier lugar.
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PixelRetro - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
