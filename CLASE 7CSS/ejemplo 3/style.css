@@ -1,0 +1,20 @@
+div{
+padding: 20px;
+margin: 10px;
+color: white;
+}
+
+.caja-nombre1{
+    background-color: blue;
+}
+.caja-RGB{
+    background-color: pink;
+
+}
+
+.caja-HEX{
+
+background-color: yellow;
+
+
+}
