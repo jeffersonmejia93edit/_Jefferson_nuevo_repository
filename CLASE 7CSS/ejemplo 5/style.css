@@ -1,0 +1,16 @@
+.titulo-principal{
+
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+.Texto-parrafo{
+   font-size: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: inherit;
+   line-height: 20px;
+   text-align: center;
+}
