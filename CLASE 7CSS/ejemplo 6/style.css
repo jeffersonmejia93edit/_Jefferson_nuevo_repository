@@ -1,0 +1,15 @@
+div{
+
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    color: white;
+}
+
+.caja-lineal{
+
+    background: linear-gradient(#7db301, #5a04c4)
+    
+
+}
+
