@@ -1,0 +1,13 @@
+.caja-extrinseca {
+    width: 200px;
+    height: 50px;
+    /* Valor fijo */
+    background-color: lightcoral;
+    margin-bottom: 50px;
+}
+
+.caja-intrinseca {
+    width: fit-content;
+    /* Valor adaptable al contenido */
+    background-color: lightgreen;
+}

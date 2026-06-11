@@ -1,0 +1,15 @@
+.boton-redondeado {
+    background-color: white;
+    padding: 10px 20px;
+
+    /* Propiedades del borde */
+    border-width: 3px;
+    /* Ancho */
+    border-style: solid;
+    /* Estilo: línea discontinua */
+    border-color: #ff8c00;
+    /* Color: Naranja */
+
+    /* Esquinas redondeadas */
+    border-radius: 10px;
+}
