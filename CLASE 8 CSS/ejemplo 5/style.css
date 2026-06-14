@@ -1,0 +1,16 @@
+.boton-chat {
+    position: fixed;
+    /* Se fija a la ventana del navegador */
+    bottom: 20px;
+    /* Se separa 20px desde abajo */
+    right: 20px;
+    /* Se separa 20px desde la derecha */
+
+    /* Estilos visuales */
+    background-color: #25D366;
+    /* Verde tipo WhatsApp */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+}

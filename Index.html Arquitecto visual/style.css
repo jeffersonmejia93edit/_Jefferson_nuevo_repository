@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+}
+
+.fondo {
+    min-height: 100vh;
+    background-image: url("foto pikachu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-pokemon {
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("foto pikachu.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    transition: all 0.3s ease;
+}
+
+.tarjeta-pokemon:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-pokemon::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: rgba(255, 221, 0, 0.3);
+    border-radius: 50%;
+    top: -60px;
+    right: -60px;
+}
+
+.tarjeta-pokemon h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+    position: relative;
+    z-index: 1;
+}
+
+.tipo {
+    display: inline-block;
+    background: #ffd700;
+    color: #222;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+.tarjeta-pokemon p:last-child {
+    color: white;
+    line-height: 1.6;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.tarjeta-pokemon::after {
+    content: "⚡";
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 2rem;
+    opacity: 0.3;
+}

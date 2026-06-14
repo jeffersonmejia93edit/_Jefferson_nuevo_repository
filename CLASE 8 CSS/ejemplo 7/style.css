@@ -1,0 +1,24 @@
+.tarjeta-producto {
+    position: relative;
+    /* Funciona como el ancla para la etiqueta de oferta */
+
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 50px;
+}
+
+.etiqueta-oferta {
+    position: absolute;
+    /* Se mueve libremente dentro de la tarjeta de producto */
+
+    /* Lo colocamos en la esquina superior izquierda */
+    top: -20px;
+    left: -20px;
+
+    /* Estilos visuales */
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}

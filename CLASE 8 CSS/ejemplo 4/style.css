@@ -1,0 +1,31 @@
+.tarjeta-padre {
+    /* POSICIONAMIENTO RELATIVO: Se queda en su lugar normal, 
+     pero sirve como "ancla" para sus elementos hijos absolutos */
+    position: relative;
+
+    width: 250px;
+    height: 150px;
+    background-color: #eee;
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 100px;
+    /* Para separarlo de las orillas de la pantalla */
+}
+
+.boton-hijo {
+    /* POSICIONAMIENTO ABSOLUTO: Se sale del flujo normal y flota 
+     basándose en las coordenadas de su padre relativo */
+    position: absolute;
+
+    /* Lo movemos a la esquina superior derecha de la tarjeta */
+    top: 0px;
+    /* Sube un poco hacia afuera del padre */
+    right: 0px;
+    /* Se mueve a la derecha hacia afuera del padre */
+
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    /* Lo hace un círculo perfecto */
+}
