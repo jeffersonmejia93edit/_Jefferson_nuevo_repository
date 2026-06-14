@@ -58,10 +58,6 @@ Estos valores corresponden al modelo de caja (Box Model) mostrado por las DevToo
 
 
 
-
-
-
-
 ## Auditoría Manual y Corrección de CSS
 
 Durante la revisión del archivo `style.css` se identificaron tres errores de sintaxis:
