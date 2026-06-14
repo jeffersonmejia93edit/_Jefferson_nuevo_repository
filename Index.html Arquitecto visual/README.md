@@ -44,7 +44,7 @@ Para la lectura en pantallas digitales recomiendo utilizar fuentes **sans-serif*
 
 ## Captura de pantalla del diagrama de caja
 
-![Captura de pantalla del Box Model](.Index.html Arquitecto visual/box-model.jpeg)
+![(El Modelo de Caja).](images/box-model.jpeg)
 
 ## Valores identificados
 
