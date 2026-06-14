@@ -44,7 +44,7 @@ Para la lectura en pantallas digitales recomiendo utilizar fuentes **sans-serif*
 
 ## Captura de pantalla del diagrama de caja
 
-![Diagrama de caja](images/c:\Users\MINEDUCYT\Documents\GitHub\_Jefferson_nuevo_repository\Index.html Arquitecto visual\box-model.jpeg)
+![Captura de pantalla del Box Model](./images/box-model.jpeg)
 
 ## Valores identificados
 
