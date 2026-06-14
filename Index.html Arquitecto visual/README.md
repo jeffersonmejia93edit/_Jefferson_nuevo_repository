@@ -42,6 +42,26 @@ Según la documentación oficial de MDN, la propiedad `font-family` permite util
 
 Para la lectura en pantallas digitales recomiendo utilizar fuentes **sans-serif**, ya que sus formas simples y limpias suelen resultar más fáciles de leer en diferentes tamaños y resoluciones. Además, son ampliamente utilizadas en sitios web, aplicaciones y sistemas operativos modernos debido a su claridad visual. 
 
+## Captura de pantalla del diagrama de caja
+
+![Diagrama de caja](./images/box-model.jpeg)
+
+## Valores identificados
+
+Al inspeccionar el elemento seleccionado con las herramientas de desarrollador del navegador se observaron los siguientes valores:
+
+- Margin (exterior): 16px
+- Padding (interior): 24px
+
+Estos valores corresponden al modelo de caja (Box Model) mostrado por las DevTools.
+
+
+
+
+
+
+
+
 ## Auditoría Manual y Corrección de CSS
 
 Durante la revisión del archivo `style.css` se identificaron tres errores de sintaxis:
