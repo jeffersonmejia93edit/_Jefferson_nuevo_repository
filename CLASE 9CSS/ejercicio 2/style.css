@@ -1,0 +1,18 @@
+.caja {
+    background-color: #4ecdc4;
+    padding: 20px; margin: 5px;
+    font-size: 24px; color: white; text-align: center;
+}
+
+.contenedor-flex {
+    display: flex;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    height: 300px; /* Le damos altura para notar bien las columnas */
+}
+
+/* Clases de dirección (Prueba aplicarlas en el HTML) */
+.row { flex-direction: row; } /* De izquierda a derecha */
+.column { flex-direction: column; } /* De arriba hacia abajo */
+.row-reverse { flex-direction: row-reverse; } /* De derecha a izquierda */
+.column-reverse { flex-direction: column-reverse; } /* De abajo hacia arriba */

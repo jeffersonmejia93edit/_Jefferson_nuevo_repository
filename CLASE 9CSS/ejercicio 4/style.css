@@ -1,0 +1,27 @@
+.contenedor-flex {
+    display: flex;
+    border: 2px solid blue;
+    padding: 10px;
+    width: 100%; /* Achica la ventana del navegador para ver el efecto Shrink */
+}
+
+.caja { padding: 20px; margin: 5px; color: white; font-weight: bold; text-align: center;}
+
+/* Flex Basis: Establece el tamaño inicial antes de repartir espacio [cite: 61] */
+.basis { 
+    background-color: #ff9ff3;
+    flex-basis: 200px; 
+}
+
+/* Flex Grow: Proporción del espacio libre que tomará [cite: 63] */
+.grow { 
+    background-color: #f368e0;
+    flex-grow: 2; /* Tomará el doble de espacio extra que los demás */
+}
+
+/* Flex Shrink: Determina cómo se reduce para encajar si no hay espacio [cite: 65] */
+.shrink { 
+    background-color: #8395a7;
+    flex-shrink: 0; /* 0 bloquea la reducción, este elemento nunca se hará más pequeño [cite: 66] */
+    width: 250px;
+}

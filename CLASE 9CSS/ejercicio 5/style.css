@@ -1,0 +1,25 @@
+.contenedor-flex {
+    display: flex;
+    background-color: #c8d6e5;
+    /* Evita que se desborde, pasando los elementos a la siguiente línea [cite: 75] */
+    flex-wrap: wrap; 
+    width: 400px; /* Ancho pequeño a propósito para forzar el salto de línea */
+}
+
+.caja {
+    background-color: #1dd1a1; padding: 20px; margin: 5px;
+    width: 100px; color: white; text-align: center;
+}
+
+/* El valor por defecto de order es 0[cite: 81]. 
+   Números negativos van al principio[cite: 82]. */
+.importante {
+    background-color: #ff6b6b;
+    order: -1; 
+}
+
+/* Números positivos más altos van al final [cite: 82] */
+.ultimo {
+    background-color: #5f27cd;
+    order: 5;
+}

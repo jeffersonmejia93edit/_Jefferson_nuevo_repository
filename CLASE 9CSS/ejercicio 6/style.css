@@ -1,0 +1,41 @@
+body { font-family: sans-serif; margin: 0; background-color: #f4f4f4; }
+
+/* Menú: Uso de flex, justify-content y align-items */
+.menu-navegacion {
+    display: flex;
+    justify-content: space-between; /* Separa logo, enlaces y botón a los extremos [cite: 31, 32] */
+    align-items: center; /* Centra los elementos verticalmente [cite: 46, 47] */
+    background-color: #2c3e50;
+    padding: 15px 30px;
+    color: white;
+}
+
+.enlaces {
+    display: flex;
+    gap: 20px; /* Crea espacio entre los enlaces */
+}
+
+.enlaces a { color: white; text-decoration: none; font-weight: bold; }
+.boton-login { background-color: #e74c3c; border: none; padding: 10px 20px; color: white; cursor: pointer; }
+
+/* Galería: Uso de wrap y flex-grow */
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* Multilínea para que se adapte en celulares [cite: 75, 76] */
+    padding: 20px;
+    gap: 15px;
+}
+
+.tarjeta {
+    background-color: white;
+    flex-grow: 1; /* Crecen para ocupar el espacio disponible [cite: 63] */
+    flex-basis: 200px; /* Tamaño base antes de crecer [cite: 61] */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 20px;
+    color: #333;
+}

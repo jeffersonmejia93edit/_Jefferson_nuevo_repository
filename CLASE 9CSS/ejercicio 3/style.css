@@ -1,0 +1,14 @@
+.caja { background-color: #feca57; padding: 20px; margin: 5px; font-weight: bold; }
+
+.contenedor-flex {
+    display: flex;
+    background-color: #222f3e;
+    padding: 10px;
+}
+
+/* Juega con estas propiedades en el HTML */
+.start { justify-content: flex-start; } /* Al inicio */
+.end { justify-content: flex-end; } /* Al final */
+.center { justify-content: center; } /* Al centro */
+.space-between { justify-content: space-between; } /* Espacio en medio, extremos pegados */
+.space-around { justify-content: space-around; } /* Espacio igual alrededor de cada item */

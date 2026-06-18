@@ -1,0 +1,18 @@
+/* Estilos básicos para que las cajas se vean bien */
+body { font-family: sans-serif; padding: 20px; }
+.caja {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Aquí ocurre la magia de Flexbox */
+.contenedor-flex {
+    display: flex; /* Transforma el div en un contenedor flex */
+    background-color: #f0f0f0;
+    border: 2px dashed #333;
+    padding: 10px;
+}
