@@ -1,0 +1,122 @@
+/* Reseteo y Modelo de Caja (Fundamental) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+/* ESTRUCTURA MACRO CON GRID */
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr; 
+    grid-template-rows: 70px 1fr; 
+    grid-template-areas:
+        "sidebar topbar"
+        "sidebar content";
+    min-height: 100vh;
+}
+
+/* CABECERA CON FLEXBOX */
+.topbar {
+    grid-area: topbar;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar h1 {
+    font-size: 1.5rem;
+    color: #0f172a;
+}
+
+/* BARRA LATERAL CON FLEXBOX */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #0f172a;
+    color: white;
+    padding: 30px 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    transition-duration:  0.3s, color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+/* CONTENIDO PRINCIPAL CON GRID ANIDADO */
+.content {
+    grid-area: content;
+    padding: 30px;
+    display: grid;
+    /* Grid dinámico que se adapta al ancho disponible */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-content: start;
+}
+
+/* TARJETAS CON FLEXBOX INTERNO Y MODELO DE CAJA */
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    color: #64748b;
+}
+
+.card p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+/* Utilidades de Grid para ocupar más espacio */
+.card-wide {
+    grid-column: 1 / -1; 
+    min-height: 250px;
+}
+
+.grafico-placeholder {
+    font-size: 1rem !important;
+    font-weight: normal !important;
+    color: #94a3b8 !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #cbd5e1;
+    border-radius: 8px;
+}

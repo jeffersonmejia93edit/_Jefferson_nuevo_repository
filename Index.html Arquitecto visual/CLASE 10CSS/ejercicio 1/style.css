@@ -1,0 +1,15 @@
+/* Al activar grid, el contenedor está listo para ser bidimensional */
+.contenedor-basico {
+    display: grid;
+    background-color: #f3f4f6;
+    padding: 20px;
+}
+
+.item {
+    background-color: #a855f7;
+    color: white;
+    padding: 20px;
+    border: 1px solid #7e22ce;
+    text-align: center;
+    font-weight: bold;
+}

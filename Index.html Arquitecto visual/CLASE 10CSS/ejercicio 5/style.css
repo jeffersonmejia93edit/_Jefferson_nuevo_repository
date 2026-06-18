@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.box {
+    background: #6366f1;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Flexbox empuja a los elementos según su contenido interno */
+.flex-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    background: #e0e7ff;
+    padding: 15px;
+}
+
+/* Grid obliga a los elementos a respetar la columna estricta (1 fracción cada una) */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background: #e0e7ff;
+    padding: 15px;
+}

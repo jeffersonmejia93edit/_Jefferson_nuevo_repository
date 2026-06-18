@@ -1,0 +1,30 @@
+.layout-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 80px 300px 80px;
+    
+    /* El mapa visual dibujado en texto */
+    grid-template-areas:
+        "header header header"
+        "sidebar main ads"
+        "footer footer footer";
+    gap: 15px;
+}
+
+/* Asignación de áreas */
+.header  { grid-area: header; background: #8b5cf6; }
+.sidebar { grid-area: sidebar; background: #2dd4bf; }
+.main    { grid-area: main; background: #fb7185; }
+.ads     { grid-area: ads; background: #facc15; }
+.footer  { grid-area: footer; background: #fb923c; }
+
+/* Estilos compartidos para visualizar mejor */
+.layout-container > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
