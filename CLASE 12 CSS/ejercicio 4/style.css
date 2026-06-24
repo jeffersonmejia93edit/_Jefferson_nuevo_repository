@@ -1,0 +1,50 @@
+/* =========================================
+   ESTILOS BASE Y MOBILE FIRST
+========================================= */
+.item-area {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* Colores para diferenciar cada área en clase */
+.header { background-color: #ef4444; }     /* Rojo */
+.sidebar { background-color: #f59e0b; }    /* Naranja */
+.contenido { background-color: #3b82f6; }  /* Azul */
+.footer { background-color: #10b981; }     /* Verde */
+
+/* 1. ASIGNAR NOMBRES A LAS ÁREAS */
+.header { grid-area: cabecera; }
+.sidebar { grid-area: menu; }
+.contenido { grid-area: principal; }
+.footer { grid-area: pie; }
+
+/* 2. DISEÑO MÓVIL (Una sola columna apilada) */
+.contenedor-areas {
+  display: grid;
+  gap: 15px;
+  /* El mapa para celulares: todo hacia abajo */
+  grid-template-areas: 
+    "cabecera"
+    "menu"
+    "principal"
+    "pie";
+}
+
+/* =========================================
+   MEDIA QUERY PARA ESCRITORIO
+========================================= */
+@media screen and (min-width: 768px) {
+  .contenedor-areas {
+    /* Definimos dos columnas: una de 250px para el menú, y el resto libre (1fr) */
+    grid-template-columns: 250px 1fr;
+    
+    /* El mapa para pantallas grandes: "dibujamos" cómo queremos que se vea */
+    grid-template-areas: 
+      "cabecera cabecera"
+      "menu principal"
+      "pie pie";
+  }
+}

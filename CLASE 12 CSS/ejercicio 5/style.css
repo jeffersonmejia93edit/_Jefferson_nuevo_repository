@@ -1,0 +1,176 @@
+/* =========================================
+   ESTILOS BASE (Mobile First)
+   Todo el CSS inicial está pensado para móviles
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccion {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2b5b84;
+}
+
+h2 {
+    color: #2b5b84;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.header, .footer {
+    background-color: #2b5b84;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================================
+   EJERCICIO 1: Múltiples propiedades y Orientación
+========================================= */
+.caja-ejercicio-1 {
+    background-color: #e2e8f0;
+    color: #333;
+    padding: 15px;
+    border-radius: 4px;
+    transition: all 0.4s ease; /* Transición suave para ver el cambio */
+}
+
+/* Aplicando orientación y múltiples propiedades */
+@media screen and (min-width: 600px) and (orientation: landscape) {
+    .caja-ejercicio-1 {
+        background-color: #4CAF50; /* Cambia color de fondo */
+        color: white; /* Cambia color de texto */
+        padding: 40px; /* Cambia espaciado interno */
+        font-size: 1.2rem; /* Cambia tamaño de fuente */
+        border-radius: 20px; /* Cambia la forma de los bordes */
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.2); /* Añade sombra */
+    }
+}
+
+/* =========================================
+   EJERCICIO 2: Operadores lógicos (and, or, only)
+========================================= */
+.grid-operadores {
+    display: grid;
+    gap: 10px;
+}
+
+.alerta {
+    padding: 15px;
+    background-color: #e2e8f0;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    opacity: 0.5; /* Apagado por defecto */
+}
+
+/* Operador AND: Ambas condiciones deben cumplirse */
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .alerta-and {
+        background-color: #fef08a;
+        border-color: #eab308;
+        color: #854d0e;
+        opacity: 1; /* Se enciende */
+        font-weight: bold;
+    }
+}
+
+/* Operador OR: Separado por coma en CSS (significa "o") */
+@media screen and (max-width: 400px), screen and (min-width: 900px) {
+    .alerta-or {
+        background-color: #fecaca;
+        border-color: #ef4444;
+        color: #991b1b;
+        opacity: 1; /* Se enciende */
+        font-weight: bold;
+    }
+}
+
+/* Operador ONLY: Protege de navegadores antiguos, se aplica desde 1024px */
+@media only screen and (min-width: 1024px) {
+    .alerta-only {
+        background-color: #bbf7d0;
+        border-color: #22c55e;
+        color: #166534;
+        opacity: 1; /* Se enciende */
+        font-weight: bold;
+    }
+}
+
+/* =========================================
+   EJERCICIO 3: Flexbox Responsivo (Wrap y Direction)
+========================================= */
+.contenedor-flexbox {
+    display: flex;
+    flex-direction: column; /* Diseño Móvil: Apilado verticalmente */
+    gap: 15px;
+}
+
+.tarjeta-flex {
+    background-color: #d8b4e2; /* Color inspirado en tu PDF */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Breakpoint para Tablet/Escritorio */
+@media screen and (min-width: 768px) {
+    .contenedor-flexbox {
+        flex-direction: row; /* Cambia a fila horizontal */
+        flex-wrap: wrap; /* Permite que los elementos bajen de línea si no caben */
+    }
+    
+    .tarjeta-flex {
+        flex: 1 1 30%; /* Crece, se encoge, y toma aproximadamente el 30% del ancho */
+    }
+}
+
+/* =========================================
+   EJERCICIO 4: Grid Responsivo
+========================================= */
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Diseño Móvil: 1 sola columna */
+    gap: 15px;
+}
+
+.item-grid {
+    background-color: #60a5fa;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Breakpoint para Tablet (2 columnas) */
+@media screen and (min-width: 600px) {
+    .contenedor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Breakpoint para Escritorio (3 columnas) */
+@media screen and (min-width: 900px) {
+    .contenedor-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+

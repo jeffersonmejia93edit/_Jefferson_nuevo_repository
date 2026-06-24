@@ -1,0 +1,19 @@
+.caja-magica {
+  background-color: #e2e8f0;
+  color: #333;
+  padding: 15px;
+  border-radius: 4px;
+  transition: all 0.5s ease; /* Para que los alumnos vean la animación al cambiar */
+}
+
+/* Media Query con múltiples propiedades y Orientación */
+@media screen and (min-width: 600px) and (orientation: landscape) {
+  .caja-magica {
+    background-color: #4CAF50; /* Cambio de color de fondo */
+    color: white;              /* Cambio de color de texto */
+    padding: 40px;             /* Aumento de espaciado interno */
+    font-size: 1.5rem;         /* Aumento de tipografía */
+    border-radius: 20px;       /* Bordes más redondeados */
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3); /* Nueva propiedad: Sombra */
+  }
+}

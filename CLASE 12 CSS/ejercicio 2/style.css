@@ -1,0 +1,34 @@
+/* Estilo base apagado */
+.alerta {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #ccc;
+  opacity: 0.4; 
+}
+
+/* Operador AND: Ambas condiciones deben cumplirse */
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .alerta-and {
+    background-color: #fef08a;
+    color: #854d0e;
+    opacity: 1; /* Se "enciende" */
+  }
+}
+
+/* Operador OR (coma): Solo una condición debe cumplirse */
+@media screen and (max-width: 400px), screen and (min-width: 900px) {
+  .alerta-or {
+    background-color: #fecaca;
+    color: #991b1b;
+    opacity: 1; /* Se "enciende" */
+  }
+}
+
+/* Operador ONLY: Evalúa la pantalla y protege de navegadores viejos */
+@media only screen and (min-width: 1024px) {
+  .alerta-only {
+    background-color: #bbf7d0;
+    color: #166534;
+    opacity: 1; /* Se "enciende" */
+  }
+}

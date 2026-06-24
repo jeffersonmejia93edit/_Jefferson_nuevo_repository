@@ -1,0 +1,84 @@
+
+Ejercicio 5:
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Diseño Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Café El Buen Grano</h1>
+        <p>Práctica de Arquitectura Responsiva</p>
+    </header>
+
+    <main class="container">
+
+        <section class="seccion">
+            <h2>1. Media Query: Propiedades Avanzadas</h2>
+            <div class="caja-ejercicio-1">
+                <p>En móvil soy una caja sencilla. Si la pantalla mide más de 600px Y está en formato horizontal (landscape), cambiaré mi color, mis bordes, el tamaño del texto y mi sombra.</p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>2. Operadores Lógicos en Media Queries</h2>
+            <p>Redimensiona la pantalla para ver qué operador se activa:</p>
+            <div class="grid-operadores">
+                <div class="alerta alerta-and">
+                    <strong>Operador AND</strong><br>
+                    Activo entre 500px y 800px.
+                </div>
+                <div class="alerta alerta-or">
+                    <strong>Operador OR</strong><br>
+                    Activo si es menor de 400px o mayor de 900px.
+                </div>
+                <div class="alerta alerta-only">
+                    <strong>Operador ONLY</strong><br>
+                    Activo solo en pantallas a partir de 1024px.
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>3. Flexbox Responsivo</h2>
+            <div class="contenedor-flexbox">
+                <div class="tarjeta-flex">
+                    <h3>Raclette Blueberry</h3>
+                    <p>Producto apilado en móvil, alineado en fila en escritorio.</p>
+                </div>
+                <div class="tarjeta-flex">
+                    <h3>Ennui Snackwave</h3>
+                    <p>Utilizamos flex-direction y flex-wrap: wrap para la magia.</p>
+                </div>
+                <div class="tarjeta-flex">
+                    <h3>Selvage Poke</h3>
+                    <p>Se adapta perfectamente sin importar la pantalla.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>4. CSS Grid Responsivo</h2>
+            <div class="contenedor-grid">
+                <div class="item-grid">Imagen/Servicio 1</div>
+                <div class="item-grid">Imagen/Servicio 2</div>
+                <div class="item-grid">Imagen/Servicio 3</div>
+                <div class="item-grid">Imagen/Servicio 4</div>
+                <div class="item-grid">Imagen/Servicio 5</div>
+                <div class="item-grid">Imagen/Servicio 6</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Ticongle Academy - Módulo 3 Práctica</p>
+    </footer>
+
+</body>
+</html>
