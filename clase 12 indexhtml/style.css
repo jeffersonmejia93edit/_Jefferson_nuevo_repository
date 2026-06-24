@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f8f3ee;
+}
+
+.contenedor-principal {
+min-height: 100vh;
+display: grid;
+grid-template-rows: auto 1fr auto;
+}
+
+
+header {
+background-color: #6f4e37;
+color: white;
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 1rem;
+}
+
+nav a {
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+
+main {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+}
+
+
+.info-producto {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2rem;
+max-width: 1000px;
+
+}
+
+.imagen-cafe img {
+width: 100%;
+max-width: 400px;
+border-radius: 10px;
+}
+
+
+.texto-cafe {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+text-align: center;
+
+
+}
+
+.texto-cafe h2 {
+color: #6f4e37;
+}
+
+.texto-cafe p {
+line-height: 1.6;
+}
+
+.texto-cafe button {
+background-color: #c68b59;
+color: white;
+border: none;
+padding: 12px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.texto-cafe button:hover {
+background-color: #a66b3d;
+}
+
+footer {
+background-color: #6f4e37;
+color: white;
+text-align: center;
+padding: 1rem;
+}
+
+
+@media (min-width: 768px) {
+
+
+.info-producto {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-cafe,
+.texto-cafe {
+    flex: 1;
+}
+
+.texto-cafe {
+    text-align: left;
+    align-items: flex-start;
+}
+
+
+}
