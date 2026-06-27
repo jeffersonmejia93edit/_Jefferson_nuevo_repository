@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPrints - Adopta un Amigo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-maestro min-h-screen bg-stone-50 font-sans flex flex-col">
+        
+  
+        <header class="bg-white border-b border-stone-200 py-4 px-6 md:px-12 class-flex-header">
+            <div class="max-w-7xl mx-auto flex justify-between items-center w-full">
+                <a href="#" class="text-2xl font-black text-orange-600 tracking-tight flex items-center gap-2">
+                    🐾 PawPrints
+                </a>
+                <nav>
+                    <ul class="flex space-x-6 md:space-x-8 font-semibold text-stone-600">
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Inicio</a></li>
+                        <li><a href="#adoptar" class="hover:text-orange-500 transition-colors">Adoptar</a></li>
+                        <li><a href="#contacto" class="hover:text-orange-500 transition-colors">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+     
+        <main class="w-full max-w-7xl mx-auto p-6 md:p-12 flex-grow">
+            
+            <section class="flex flex-col md:flex-row items-center justify-between gap-12 py-8 md:py-16">
+                <div class="w-full md:w-1/2 space-y-6 text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-stone-900 leading-tight">
+                        ADOPTAR ES <span class="text-orange-500">LO MÁXIMO</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-stone-600 font-medium leading-relaxed">
+                        El amor verdadero no se compra, se adopta. Decenas de peludos en nuestro refugio están esperando una segunda oportunidad. ¡Cambia su mundo hoy!
+                    </p>
+                    <div class="pt-2">
+                        <a href="#adoptar" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg px-8 py-3.5 rounded-xl shadow-md transition-all transform hover:-translate-y-0.5">
+                            Ver mascotas
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=800" 
+                         alt="Perro feliz rescatado" 
+                         class="w-full h-[350px] md:h-[450px] object-cover rounded-3xl shadow-xl border-4 border-white">
+                </div>
+            </section>
+
+        
+            <section id="adoptar" class="py-12 border-t border-stone-200">
+                <div class="text-center md:text-left mb-10"> 
+                    <h2 class="text-3xl font-extrabold text-stone-900">Mascotas buscando un hogar</h2>
+                    <p class="text-stone-600 mt-2">Conoce a tus posibles mejores amigos. Todos están vacunados, desparasitados y listos para dar amor.</p>
+                </div>
+
+               
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                   
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-100 hover:shadow-lg transition-all flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=600" 
+                             alt="Perro Rocky" 
+                             class="w-full h-64 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-stone-900">Rocky</h3>
+                                <span class="bg-orange-100 text-orange-700 text-xs font-bold px-2.5 py-1 rounded-full">Cachorro</span>
+                            </div>
+                            <p class="text-stone-600 text-sm flex-grow mb-4">
+                                Un Golden Retriever lleno de energía. Le encanta correr en el parque, jugar con la pelota y es excelente con los niños.
+                            </p>
+                            <div class="border-t border-stone-100 pt-4 flex justify-between items-center text-xs text-stone-500 font-medium mb-4">
+                                <span>♂️ Macho</span>
+                                <span>•</span>
+                                <span>🕒 8 meses</span>
+                            </div>
+                            <a href="#contacto" class="block text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 px-4 rounded-xl transition-colors">
+                                Adoptar a Rocky
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-100 hover:shadow-lg transition-all flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=600" 
+                             alt="Gata Luna" 
+                             class="w-full h-64 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-stone-900">Luna</h3>
+                                <span class="bg-amber-100 text-amber-700 text-xs font-bold px-2.5 py-1 rounded-full">Joven</span>
+                            </div>
+                            <p class="text-stone-600 text-sm flex-grow mb-4">
+                                Una gatita muy tranquila y cariñosa. Su pasatiempo favorito es dormir en el sol y buscar caricias en la barbilla.
+                            </p>
+                            <div class="border-t border-stone-100 pt-4 flex justify-between items-center text-xs text-stone-500 font-medium mb-4">
+                                <span>♀️ Hembra</span>
+                                <span>•</span>
+                                <span>🕒 1.5 años</span>
+                            </div>
+                            <a href="#contacto" class="block text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 px-4 rounded-xl transition-colors">
+                                Adoptar a Luna
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-100 hover:shadow-lg transition-all flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600" 
+                             alt="Perro Max" 
+                             class="w-full h-64 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="text-xl font-bold text-stone-900">Max</h3>
+                                <span class="bg-stone-100 text-stone-700 text-xs font-bold px-2.5 py-1 rounded-full">Adulto</span>
+                            </div>
+                            <p class="text-stone-600 text-sm flex-grow mb-4">
+                                Es el guardián perfecto y un compañero leal. Es muy obediente, sabe pasear sin correa y convive bien con otros perros.
+                            </p>
+                            <div class="border-t border-stone-100 pt-4 flex justify-between items-center text-xs text-stone-500 font-medium mb-4">
+                                <span>♂️ Macho</span>
+                                <span>•</span>
+                                <span>🕒 4 años</span>
+                            </div>
+                            <a href="#contacto" class="block text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 px-4 rounded-xl transition-colors">
+                                Adoptar a MAX
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+        </main>
+
+       
+        <footer class="bg-stone-900 text-stone-400 text-center py-6 text-sm border-t border-stone-800 mt-auto">
+            <p>&copy; 2026 PawPrints. Hecho con ❤️ para los peludos.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
