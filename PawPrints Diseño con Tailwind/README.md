@@ -17,6 +17,7 @@ Aquí encontrarás los archivos organizados por módulos o materias:
 * **`/Clase 11`**: indexhtml.
 * **`/Clase 12`**: indexhtml.
 * **`/Index.html `**:   Arquitecto visual.
+* **`/Pawprints `**:   Landing Page con Tailwind CSS.
 ---
 
 ## 👨‍💻 Autor
